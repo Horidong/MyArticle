@@ -14,7 +14,7 @@ import ReviewContentPage from './pages/blog/review/ReviewContent';
 const App = () => {
   return (
     <LanguageProvider>
-      <Router basename='/MyArticle'>
+      <Router >
         <div className="min-h-screen bg-gray-50">
           <Header />
           <Routes>

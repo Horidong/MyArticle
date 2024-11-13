@@ -65,27 +65,27 @@ const Header  = () => {
   const menuItems = [
     {
       title: 'Home',
-      link: '/',
+      link: '/MyArticle/',
       submenu: null
     },
     {
       title: 'About',
-      link: '/about/me',
+      link: '/MyArticle/about/me',
       submenu: [
-        {title: 'Me', link: '/about/me'},
-        {title: 'Homepage', link: '/about/homepage'}
+        {title: 'Me', link: '/MyArticle/about/me'},
+        {title: 'Homepage', link: '/MyArticle/about/homepage'}
       ]
     },
     {
       title: 'Portfolio',
-      link: '/portfolio',
+      link: '/MyArticle/portfolio',
       submenu: null
     },
     {
       title: 'Blog',
-      link: '/blog/review',
+      link: '/MyArticle/blog/review',
       submenu: [
-        {title: 'Review', link: '/blog/review'}
+        {title: 'Review', link: '/MyArticle/blog/review'}
       ]
     }
   ];
