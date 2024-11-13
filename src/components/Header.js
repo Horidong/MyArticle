@@ -189,22 +189,22 @@ const Header  = () => {
             <div className="px-4 py-2 space-y-1">
               {menuItems.map((item, index) => (
                 <div key={index}>
-                  <a 
-                    href={item.link}
+                  <Link 
+                    to={item.link}
                     className="block py-2 text-gray-700 hover:text-blue-600 transition-colors duration-200"
                   >
                     {item.title}
-                  </a>
+                  </Link>
                   {item.submenu && (
                     <div className="pl-4 mb-2">
                       {item.submenu.map((subItem, subIndex) => (
-                        <a
+                        <Link
                           key={subIndex}
-                          href={subItem.link}
+                          to={subItem.link}
                           className="block py-2 text-gray-600 hover:text-blue-600 transition-colors duration-200"
                         >
                           {subItem.title}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   )}
