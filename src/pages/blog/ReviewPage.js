@@ -133,12 +133,12 @@ const ReviewPage = () => {
 
                   {/* Read More Link */}
                   <div className="mt-4">
-                    <a 
+                    <Link 
                       href={`/blog/review/${post.number}`}
                       className="text-blue-600 hover:text-blue-800 font-medium"
                     >
                       {isEnglish ? "Read more →" : "더 보기 →"}
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </article>
