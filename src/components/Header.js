@@ -108,8 +108,8 @@ const Header  = () => {
             <div className="hidden md:flex space-x-8 absolute left-4 xl:left-8 2xl:left-16">
               {menuItems.map((item, index) => (
                 <div key={index} className="relative group">
-                  <a 
-                    href={item.link}
+                  <Link
+                    to={item.link}
                     className="flex items-center text-gray-700 hover:text-blue-600 transition-colors duration-200 relative group py-4"
                   >
                     {item.title}
@@ -117,19 +117,19 @@ const Header  = () => {
                       <ChevronDown size={16} className="ml-1 transform group-hover:rotate-180 transition-transform duration-200" />
                     )}
                     <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200" />
-                  </a>
+                  </Link>
                   
                   {/* Dropdown Menu */}
                   {item.submenu && (
                     <div className="absolute left-0 top-full bg-white border rounded-lg shadow-lg py-2 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transform group-hover:translate-y-0 translate-y-2 transition-all duration-200">
                       {item.submenu.map((subItem, subIndex) => (
-                        <a
+                        <Link
                           key={subIndex}
-                          href={subItem.link}
+                          to={subItem.link}
                           className="block px-4 py-2 text-gray-700 hover:text-blue-600 hover:bg-gray-50 transition-colors duration-200"
                         >
                           {subItem.title}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   )}
