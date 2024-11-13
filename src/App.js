@@ -18,12 +18,12 @@ const App = () => {
         <div className="min-h-screen bg-gray-50">
           <Header />
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about/me" element={<AboutMePage />} />
-            <Route path="/about/homepage" element={<AboutHomePage />} />
-            <Route path="/blog/review" element={<ReviewPage  />} />
-            <Route path="/portfolio" element={<PortfolioPage  />} />
-            <Route path="/blog/review/:number" element={<ReviewContentPage  />} />
+            <Route path={process.env.PUBLIC_URL +"/"} element={<HomePage />} />
+            <Route path={process.env.PUBLIC_URL +"/about/me"} element={<AboutMePage />} />
+            <Route path={process.env.PUBLIC_URL +"/about/homepage"} element={<AboutHomePage />} />
+            <Route path={process.env.PUBLIC_URL +"/blog/review"} element={<ReviewPage  />} />
+            <Route path={process.env.PUBLIC_URL +"/portfolio"} element={<PortfolioPage  />} />
+            <Route path={process.env.PUBLIC_URL +"/blog/review/:number"} element={<ReviewContentPage  />} />
           </Routes>
         </div>
       </Router>
